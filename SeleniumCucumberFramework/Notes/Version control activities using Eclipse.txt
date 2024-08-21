@@ -3,4 +3,8 @@ Step 1: Create an empty remote repository and get the url => git@github.com:Mano
 Step 2: Create a local repository => Eclipse -> Project -> Right Click on Project -> Team -> Share Project -> Create Repository -> Finish
 Step 3: Adding files to index/staging => Right Click on Project -> Team -> Add to Index
 Step 4: Committing files to local repository => Right Click on Project -> Team -> Commit -> Provide a Commit Message -> Click on Commit button
-Step 5: 
+Step 5: Push the files to remote GitHub repository => Right Click on Project -> Team -> Push Branch Master
+Step 6: Go to GitHub and refresh the page
+Step 7: After made new changes add files to index/staging => Right Click on Project -> Team -> Add to Index
+Step 8: Committing files to local repository => Right Click on Project -> Team -> Commit -> Provide a Commit Message -> Click on Commit button
+Step 9: Push the files to remote GitHub repository => Right Click on Project -> Team -> Push Branch Master
