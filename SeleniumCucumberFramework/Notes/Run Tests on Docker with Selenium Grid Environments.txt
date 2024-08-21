@@ -1,0 +1,70 @@
+#Docker Hub is a cloud=based repository which maintains the container images. Docker primarily runs Linux containers by default.
+#The official Selenium Docker images (e.g., selenium/standalone=chrome, selenium/node=chrome, selenium/node=firefox) are built 
+on Linux=based operating systems.
+#Workflow: Docker Hub => Download Images => Create container using images => Run tests on container
+
+=====================================================================================================================================================
+Step 1: Download Docker Desktop for Windows
+Step 2: Install Docker Desktop
+Step 3: Open Command Prompt and run docker version to ensure both Client and Server details are displayed
+Step 4: Run docker compose version to check the Docker Compose version
+Step 5: Open Docker Desktop to view Containers and Images
+=====================================================================================================================================================
+Basic Docker Commands:
+1. 'docker login' – Log in to Docker Hub
+2. 'docker images' – List all images
+3. 'docker pull <Image name>' – Download an image from Docker Hub
+4. 'docker rmi <Image Id>' – Remove an image
+
+Container Commands:
+1. 'docker ps' – List running containers
+2. 'docker ps -a' - Check Existing Containers
+3. 'docker run <Image name>' – Run a container from an image
+4. 'docker rm <Container id/name>' – Remove a stopped container
+5. 'docker run -it <Image name>' – Run a container interactively
+6. 'docker start <Container Id>' – Start a stopped container
+7. 'docker stop <Container Id>' – Stop a running container
+
+System Commands:
+1. 'docker system prune -a' - Removes unused data, including stopped containers, networks not used by any containers, unused images, and build cache.
+
+Network Commands:
+1. 'docker network ls' - Check Existing Networks
+2. 'docker network rm <network_name>' - Remove Existing Network (If Appropriate)
+3. 'docker network inspect <network_name>' - Inspect Existing Network
+=====================================================================================================================================================
+Setting Up Selenium Grid with Docker Images:-
+Step 1: Pull the necessary Docker images:
+			docker pull selenium/hub
+			docker pull selenium/node-firefox
+			docker pull selenium/node-chrome
+			docker pull selenium/node-edge
+Step 2: Verify downloaded images:
+			docker images
+Step 3: Create a Docker network:
+			docker network create <grid name>
+Step 4: Run the Selenium Hub:
+			docker run -d -p 4442-4444:4442-4444 --net <grid name> --name selenium-hub selenium/hub
+Step 5: Run Selenium Node Chrome:
+			docker run -d --net grid -e SE_EVENT_BUS_HOST=selenium-hub -e SE_EVENT_BUS_PUBLISH_PORT=4442 -e SE_EVENT_BUS_SUBSCRIBE_PORT=4443 selenium/node-chrome
+Step 6: Run Selenium Node Edge:
+			docker run -d --net grid -e SE_EVENT_BUS_HOST=selenium-hub -e SE_EVENT_BUS_PUBLISH_PORT=4442 -e SE_EVENT_BUS_SUBSCRIBE_PORT=4443 selenium/node-edge
+Step 7: Run Selenium Node Firefox:
+			docker run -d --net grid -e SE_EVENT_BUS_HOST=selenium-hub -e SE_EVENT_BUS_PUBLISH_PORT=4442 -e SE_EVENT_BUS_SUBSCRIBE_PORT=4443 selenium/node-firefox
+Step 8: (Optional) Remove the Docker network if no longer needed:
+			docker network rm <grid name>
+
+					**********************************************************************************************************************
+					*   'docker run -d' : ========================> Runs the container in detached mode. 							     *
+					*	'--net grid' : ===========================> Connects the container to the Docker network named grid.             *
+					*	'-e SE_EVENT_BUS_HOST=selenium-hub' : ====> Sets the SE_EVENT_BUS_HOST environment variable to selenium-hub.     *
+					*	'-e SE_EVENT_BUS_PUBLISH_PORT=4442' : ====> Sets the SE_EVENT_BUS_PUBLISH_PORT environment variable to 4442.     *
+					*	'-e SE_EVENT_BUS_SUBSCRIBE_PORT=4443' : ==> Sets the SE_EVENT_BUS_SUBSCRIBE_PORT environment variable to 4443.   *
+					*	'selenium/node-edge' : ===================> The Docker image to use.                                             *
+					**********************************************************************************************************************
+=====================================================================================================================================================
+Run Tests using Eclipse:
+Step 1: Go to => http://localhost:4444/ui/#
+Step 2: 
+Go to config.properties 
+			Enable execution_env=remote

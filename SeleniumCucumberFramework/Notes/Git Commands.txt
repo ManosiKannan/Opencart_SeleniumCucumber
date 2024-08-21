@@ -1,0 +1,45 @@
+Git and GitHub Workflow
+	1. Create a New Local Repository
+			Navigate to the desired directory:
+				-> cd path/to/directory
+			Initialize a new Git repository:
+				-> git init
+	2. Provide User Information to Git (One-time Setup)
+			Set the global username:
+				-> git config --global user.name "Your Name"
+			Set the global email:
+				-> git config --global user.email "your.email@example.com"
+	3. View Untracked Files:
+			Check the status of files:
+				-> git status
+	4. Add Files to the Staging Area
+			Add all files:
+				-> git add -A
+			Add specific file or folder:
+				-> git add file_name
+				-> git add folder_name/
+			Add files with a specific pattern (e.g., Java files):
+				-> git add *.java
+	5. Commit to the Local Git Repository
+			Commit changes with a message:
+				-> git commit -m "commit message"
+	6. Connect Local Repository with Remote Repository (One-time Setup)
+			Add a remote repository (replace repository_url with your GitHub repository URL):
+				-> git remote origin master https://github.com/username/repository_name.git
+	7. Push Code to Remote Repository
+			Push changes to the remote repository
+				-> git push origin master
+	8. Pull Code to Local Repository
+			Pull changes from the remote repository (replace repository_url with your GitHub repository URL):
+				-> git pull https://github.com/username/repository_name.git
+	9. Clone an Existing Project
+			Clone a repository to your local machine:
+				-> git clone https://github.com/username/repository_name.git
+	10. View Commit History
+			To view the commit history:
+				-> git log
+	11. Revert Changes
+			To undo changes to a file before committing:
+				-> git checkout -- file_name
+	
+			

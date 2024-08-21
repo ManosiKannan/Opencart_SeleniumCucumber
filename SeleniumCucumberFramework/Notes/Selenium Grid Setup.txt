@@ -1,0 +1,33 @@
+Standalone Setup:
+	1. Download Selenium Server
+			Download selenium-server-4.15.0.jar from the Selenium official website or Maven repository.
+			
+	2. Run the Selenium Grid
+			Open a terminal or command prompt and navigate to the directory where you placed selenium-server-4.15.0.jar.
+			Run the following command to start Selenium Grid in standalone mode:
+					-> java -jar selenium-server-4.15.0.jar standalone
+			This will start a Selenium server with both the hub and node components running in a single process.
+			
+	3. Access Selenium Grid Console
+			Open your web browser and navigate to: http://localhost:4444/
+			You can see the sessions, nodes, and status of the server on this page.
+			
+Hub and Node Setup (Multiple Machines):
+	1. Download Selenium Server
+			Download selenium-server-4.15.0.jar and place it in the same directory on both the hub and node machines.
+			
+	2. Run Selenium Hub
+			On the machine that will act as the hub, open a terminal or command prompt and navigate to the directory where selenium-server-4.15.0.jar is located.
+			Run the following command to start the hub:
+					-> java -jar selenium-server-4.15.0.jar hub
+			The hub will start and listen on port 4444 by default.
+
+	3. Run Selenium Node
+			On each machine that will act as a node, open a terminal or command prompt and navigate to the directory where selenium-server-4.15.0.jar is located.
+			Run the following command to start a node and register it with the hub:
+					-> java -jar selenium-server-4.15.0.jar node --hub http://<hub-ip>:4444
+			Replace <hub-ip> with the IP address or hostname of the machine where the hub is running.
+
+	4. Access Selenium Grid Console
+			Open your web browser and navigate to the hub machine’s IP address or hostname: http://<hub-ip>:4444/
+			You will see the Selenium Grid console with details about the hub and connected nodes.

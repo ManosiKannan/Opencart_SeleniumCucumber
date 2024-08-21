@@ -1,0 +1,12 @@
+Step 1: Run the Selenium Grid
+			Open a terminal or command prompt and navigate to the directory where you placed selenium-server-4.15.0.jar.
+			Run the following command to start Selenium Grid in standalone mode:
+					-> java -jar selenium-server-4.15.0.jar standalone
+			This will start a Selenium server with both the hub and node components running in a single process.
+			
+Step 2: Access Selenium Grid Console
+			Open your web browser and navigate to: http://localhost:4444/
+			You can see the sessions, nodes, and status of the server on this page.
+			
+Step 3: Go to config.properties 
+			Enable execution_env=remote

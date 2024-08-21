@@ -1,0 +1,6 @@
+Using Eclipse
+	-> Open pom.xml -> right click -> Run As -> Maven test
+
+Using Command Prompt
+	-> cd <project path>
+	-> mvn test

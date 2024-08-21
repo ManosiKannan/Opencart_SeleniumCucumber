@@ -1,0 +1,47 @@
+Cucumber Framework Design
+=========================
+Step 1: Create a Maven Project
+Step 2: Add Dependencies and Plugins in pom.xml
+			Dependencies: These dependencies will allow you to use Selenium, Cucumber, logging, and reporting tools, along with utilities for working with files and Excel.
+				1. selenium-java -> Selenium
+				2. cucumber-java -> Cucumber
+				3. cucumber-junit -> 
+				4. log4j-core -> Log4j for logging
+				5. log4j-api  -> Log4j for logging
+				6. poi -> Apache POI for Excel file handling
+				7. poi-ooxml -> Apache POI for Excel file handling
+				8. commons-io -> Commons IO for file operations
+				9. commons-lang3 -> Commons Lang for utilities
+				10. extentreports-cucumber7-adapter -> Extent Reports for reporting
+			Plugins:
+				1. maven-compiler-plugin -> Compiler Plugin
+				2. maven-surefire-plugin -> Surefire Plugin
+Step 3: Folder Structure
+			src/test/java
+				packages
+					factory
+						BaseClass.java
+					pageObejects
+					stepDefinitions
+						StepDefinitions.java
+					testRunner
+						TestRunner.java
+					utilities
+			src/test/resources
+				config.properties
+				extent.properties
+				log4j2.xml
+			feature
+				Login.feature
+			logs
+			reports
+			test-output
+			testData
+			pom.xml
+Step 4: Create Page Object Classes, Base Class, Hooks
+Step 5: Create feature file
+Step 6: Create Step Definitions Class
+Step 7: Create Test Runner Class
+Step 8: Create configuration for Logs 
+Step 9: Create configuration for cucumber reports
+Step 10: Create configuration for Extent Reports

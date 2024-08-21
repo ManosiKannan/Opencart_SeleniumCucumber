@@ -1,0 +1,6 @@
+#version control activities
+Step 1: Create an empty remote repository and get the url => git@github.com:ManosiKannan/CucumberFramework.git
+Step 2: Create a local repository => Eclipse -> Project -> Right Click on Project -> Team -> Share Project -> Create Repository -> Finish
+Step 3: Adding files to index/staging => Right Click on Project -> Team -> Add to Index
+Step 4: Committing files to local repository => Right Click on Project -> Team -> Commit -> Provide a Commit Message -> Click on Commit button
+Step 5: 
