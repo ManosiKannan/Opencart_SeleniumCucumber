@@ -1,2 +1,50 @@
 15:13:56:201 [main] INFO  factory.BaseClass - Click on Login Button
 15:13:57:113 [main] INFO  factory.BaseClass - Navigate to My Account Page
+14:38:19:903 [main] INFO  factory.BaseClass - Go to My Account --> Click on Login
+14:38:20:461 [main] INFO  factory.BaseClass - Entering email and password
+14:38:20:780 [main] INFO  factory.BaseClass - Click on Login Button
+14:38:21:637 [main] INFO  factory.BaseClass - Navigate to My Account Page
+23:29:46:067 [main] INFO  baseClass.BaseClass - User navigated to OrangeHRM Login screen
+23:29:46:376 [main] INFO  baseClass.BaseClass - User entered the username and password successfully
+23:29:47:610 [main] INFO  baseClass.BaseClass - User click on Login button sucessfully
+23:29:48:132 [main] INFO  baseClass.BaseClass - Dashboard header text is displayed
+10:44:59:673 [main] INFO  baseClass.BaseClass - User navigated to OrangeHRM Login screen
+10:44:59:898 [main] INFO  baseClass.BaseClass - User entered the username and password successfully
+10:45:01:142 [main] INFO  baseClass.BaseClass - User click on Login button sucessfully
+10:45:01:609 [main] INFO  baseClass.BaseClass - Dashboard header text is displayed
+10:50:48:149 [main] INFO  baseClass.BaseClass - User navigated to OrangeHRM Login screen
+10:50:48:408 [main] INFO  baseClass.BaseClass - User entered the username and password successfully
+10:50:49:674 [main] INFO  baseClass.BaseClass - User click on Login button sucessfully
+10:50:50:074 [main] INFO  baseClass.BaseClass - Dashboard header text is displayed
+10:52:25:078 [main] INFO  baseClass.BaseClass - User navigated to OrangeHRM Login screen
+10:52:25:313 [main] INFO  baseClass.BaseClass - User entered the username and password successfully
+10:52:26:442 [main] INFO  baseClass.BaseClass - User click on Login button sucessfully
+10:52:26:825 [main] INFO  baseClass.BaseClass - Dashboard header text is displayed
+10:53:26:181 [main] INFO  baseClass.BaseClass - User navigated to OrangeHRM Login screen
+10:53:26:414 [main] INFO  baseClass.BaseClass - User entered the username and password successfully
+10:53:27:619 [main] INFO  baseClass.BaseClass - User click on Login button sucessfully
+10:53:28:100 [main] INFO  baseClass.BaseClass - Dashboard header text is displayed
+10:55:00:945 [main] INFO  baseClass.BaseClass - User navigated to OrangeHRM Login screen
+10:55:01:194 [main] INFO  baseClass.BaseClass - User entered the username and password successfully
+10:55:01:279 [main] INFO  baseClass.BaseClass - User click on Login button sucessfully
+10:55:02:913 [main] INFO  baseClass.BaseClass - Dashboard header text is displayed
+11:05:01:939 [main] INFO  baseClass.BaseClass - User navigated to OrangeHRM Login screen
+11:05:02:173 [main] INFO  baseClass.BaseClass - User entered the username and password successfully
+11:05:03:416 [main] INFO  baseClass.BaseClass - User click on Login button sucessfully
+11:05:03:899 [main] INFO  baseClass.BaseClass - Dashboard header text is displayed
+11:06:57:129 [main] INFO  baseClass.BaseClass - User navigated to OrangeHRM Login screen
+11:06:57:358 [main] INFO  baseClass.BaseClass - User entered the username and password successfully
+11:06:58:465 [main] INFO  baseClass.BaseClass - User click on Login button sucessfully
+11:06:58:860 [main] INFO  baseClass.BaseClass - Dashboard header text is displayed
+11:08:01:721 [main] INFO  baseClass.BaseClass - User navigated to OrangeHRM Login screen
+11:08:01:961 [main] INFO  baseClass.BaseClass - User entered the username and password successfully
+11:08:03:176 [main] INFO  baseClass.BaseClass - User click on Login button sucessfully
+11:08:03:547 [main] INFO  baseClass.BaseClass - Dashboard header text is displayed
+15:24:14:254 [main] INFO  baseClass.BaseClass - User navigated to OrangeHRM Login screen
+15:24:14:586 [main] INFO  baseClass.BaseClass - User entered the username and password successfully
+15:24:15:906 [main] INFO  baseClass.BaseClass - User click on Login button sucessfully
+15:24:16:342 [main] INFO  baseClass.BaseClass - Dashboard header text is displayed
+15:29:14:927 [main] INFO  baseClass.BaseClass - User navigated to OrangeHRM Login screen
+15:29:15:265 [main] INFO  baseClass.BaseClass - User entered the username and password successfully
+15:29:15:391 [main] INFO  baseClass.BaseClass - User click on Login button sucessfully
+15:29:17:168 [main] INFO  baseClass.BaseClass - Dashboard header text is displayed

@@ -1,10 +1,19 @@
-#version control activities
-Step 1: Create an empty remote repository and get the url => git@github.com:ManosiKannan/CucumberFramework.git
-Step 2: Create a local repository => Eclipse -> Project -> Right Click on Project -> Team -> Share Project -> Create Repository -> Finish
-Step 3: Adding files to index/staging => Right Click on Project -> Team -> Add to Index
-Step 4: Committing files to local repository => Right Click on Project -> Team -> Commit -> Provide a Commit Message -> Click on Commit button
-Step 5: Push the files to remote GitHub repository => Right Click on Project -> Team -> Push Branch Master
-Step 6: Go to GitHub and refresh the page
-Step 7: After made new changes add files to index/staging => Right Click on Project -> Team -> Add to Index
-Step 8: Committing files to local repository => Right Click on Project -> Team -> Commit -> Provide a Commit Message -> Click on Commit button
-Step 9: Push the files to remote GitHub repository => Right Click on Project -> Team -> Push Branch Master
+Version Control Activities Using Git in Eclipse:
+1. Create an Empty Remote Repository
+		URL: git@github.com:ManosiKannan/CucumberFramework.git
+2. Create a Local Repository
+		Eclipse: Project -> Right-click on Project -> Team -> Share Project -> Create Repository -> Finish
+3. Add Files to Index/Staging
+		Right-click on Project -> Team -> Add to Index
+4. Commit Files to Local Repository
+		Right-click on Project -> Team -> Commit -> Provide a Commit Message -> Click on Commit button
+5. Push Files to Remote GitHub Repository
+		Right-click on Project -> Team -> Push Branch Master
+6. Verify Changes on GitHub
+		Go to GitHub and refresh the page
+7. Add New Changes to Index/Staging
+		Right-click on Project -> Team -> Add to Index
+8. Commit New Changes to Local Repository
+		Right-click on Project -> Team -> Commit -> Provide a Commit Message -> Click on Commit button
+9. Push New Changes to Remote GitHub Repository
+		Right-click on Project -> Team -> Push Branch Master
